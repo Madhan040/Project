@@ -1,0 +1,34 @@
+<div class="container" *ngIf="isLoaded">
+    <div [hidden]="isLoaded != false && postStatus != true" class="alert alert-success customPadding" style="margin-top: 0.8rem;">
+        Blog <strong>{{currentBlog.title}}</strong> deleted <strong>successfully</strong>! You are being redirected...
+      </div>
+    
+      <div [hidden]="isLoaded != false && postStatusError != true" class="alert alert-danger customPadding" style="margin-top: 0.8rem;">
+        There was an error deleting your blog.
+      </div>
+</div>
+
+<div class="container">
+
+  <div class="row" *ngIf="isLoaded">
+    <div class="col-md-12">
+      <h2>{{currentBlog.title}}</h2>
+      <small>Blog ID: <i>{{currentBlog.blogId}}</i></small>
+      <p>Posted by <i>{{currentBlog.author}}</i> on <i>{{currentBlog.created | date}}</i></p>
+      <p *ngIf="currentBlog.tags.length>0">tags : <span *ngFor="let tag of currentBlog.tags;let first=first;let last=last">{{tag}}{{last ? '' : ', '}}</span></p>
+      <hr>
+      <div [innerHtml]="currentBlog.bodyHtml"></div>
+      <hr>
+      <h5>Category:  <i>{{currentBlog.category}}</i></h5>
+    </div>
+  </div>
+  <hr>
+  <div class="row" style="display: flex;" *ngIf="currentBlog">
+    <div class="col-10 mx-auto d-flex justify-content-around">
+      <a class="d-inline-flex btn btn-primary"  [routerLink]="['/edit',currentBlog.blogId]">Edit</a>
+      <a class="d-inline-flex btn btn-danger" (click)="deleteThisBlog()">Delete</a>
+      <a class="d-inline-flex btn btn-warning" (click)="goBackToPreviousPage()">Go Back</a>
+    </div>
+  </div>
+
+</div>
