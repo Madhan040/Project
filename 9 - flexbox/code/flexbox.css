@@ -1,0 +1,102 @@
+.my-container {
+    display: flex;
+   
+    /* to tell that elements should wrap themselves to next line*/
+    flex-wrap: wrap;
+   
+
+    width: 100%;
+    background-color: #D8D8D8;
+}
+
+
+
+.container-item {
+
+    height: 300px;
+}
+
+
+
+.myFont {
+
+    font-size: 50px;
+    color: white;
+
+}
+
+.blue {
+    background-color: #0081EA;
+}
+
+.red {
+    background-color: #EA000B;
+}
+
+.green {
+    background-color: #068400;
+}
+
+.purple {
+    background-color: #3F3FBF;
+}
+
+
+
+/*use media queries to change the layout*/
+
+@media screen and (min-width: 768px) {
+
+
+    .blue {
+        width: 50%;
+    }
+    .red {
+        width: 50%;
+    }
+    .green {
+
+        width: 50%;
+    }
+    .purple {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+
+    .blue {
+
+        width: 50%;
+    }
+    .red {
+
+        width: 50%;
+    }
+    .green {
+
+        width: 100%;
+    }
+    .purple {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+
+    .blue {
+        width: 100%;
+    }
+    .red {
+        width: 100%;
+    }
+    .green {
+        width: 100%;
+    }
+    .purple {
+        width: 100%;
+    }
+}
