@@ -34,3 +34,20 @@ git status
 git log
 git diff
 git diff 759a06c993b98f5e2a20106d0a90fc2342066fdd
+git ststus
+git status
+git ignore
+git .ignore
+clear
+git add .bash.history
+git ststus
+clear
+git status
+git add .bash_history
+clear
+git status
+git commit -am "bashing"
+git status
+clear
+ls
+sudo nano .gitignore
