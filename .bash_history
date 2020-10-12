@@ -68,3 +68,8 @@ git add --all
 ls
 git push origin master
 git status
+git commit
+git add --all
+git commit -am "donno"
+git push origin master
+git commit
