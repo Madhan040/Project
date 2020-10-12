@@ -73,3 +73,7 @@ git add --all
 git commit -am "donno"
 git push origin master
 git commit
+git commit -m "My message"
+git add -all
+git add --all
+git commit -m "My message"

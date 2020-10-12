@@ -25,7 +25,7 @@ export class BlogHttpService {
 
   public  url_currentDetail = `all`;
   private url_baseURL = `https://blogapp.edwisor.com/api/v1/blogs/`;
-  private url_baseToken:string = `?authToken=NGExNzdiYjhjNDIzZmM4NmM0N2YzZWI0YWY3ZThlNDAyMjNjNTVjZDg0M2QxNjI5ZDU4OGU2ODc3ZDRjZDUwZmJmNGM1MDFkMGE2MGVlNDExMzcyODBiNTZhMjNiNzFhMjUzYjY3MjQ4M2Y2MDU3ZWZlODIzOTdjYzdhZThkYjE3YQ==`;
+  private url_baseToken:string = `?authToken=OTgyZWE0YTk3ODQzNTgxMjQxNTM4OTJmMTBhZTU4OTc3OGQxNTZhNjVkZjFlZDYxMzA4YjRiNGIzNmQzNjgzZDJhZWRkOTA4NmY4OGYxMTJiNDYzMGRlMTAyZTc5N2Q5MTg5ZDhiNGFkYzRmYTRmZTM4ODIyYWI2ZmRjNDhhMzk5Nw==`;
   
   public currentLoadingPercent = 100;
   //public currentBreadCrumbs = [];

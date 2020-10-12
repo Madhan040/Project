@@ -9,7 +9,7 @@ import { Alert } from 'selenium-webdriver';
   styleUrls: ['./blog-create.component.css']
 })
 export class BlogCreateComponent implements OnInit {
-  public possibleCategories = ["Comedy", "Drama", "Action", "Technology"];
+  public possibleCategories = ["Tractor Ride", "Ploughing", "Weeder Ride", "Spraying Ride"];
   
   public blogTitle:string;
   public blogBody:string;

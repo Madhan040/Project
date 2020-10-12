@@ -4,12 +4,12 @@
       </div>
     
       <div [hidden]="isLoaded != false && postStatusError != true" class="alert alert-danger customPadding" style="margin-top: 0.8rem;">
-        There was an error editing your blog .<strong>{{currentBlog.title}}</strong>
+        There was an error editing your request .<strong>{{currentBlog.title}}</strong>
       </div>
 </div>
 
 <div class="container" *ngIf="isLoaded">
-  <h3 style="margin-top: 0.8rem;">Edit This Blog</h3>
+  <h3 style="margin-top: 0.8rem;">Edit This Request</h3>
   <div class="row" style="text-align:left">
       <div class="col-md-12">
         <form #createBlogForm="ngForm" (ngSubmit)="editThisBlog()" style="margin-top: 0.8rem;">
@@ -17,24 +17,24 @@
           <div class="form-group">
   
   
-            <label class="control-label">Blog Title</label>
-            <input type="text" name="blogTitle" [(ngModel)]="blogTitle" #title="ngModel" class="form-control" placeholder="Enter blog Title"
+            <label class="control-label">Name</label>
+            <input type="text" name="blogTitle" [(ngModel)]="blogTitle" #title="ngModel" class="form-control" placeholder="Enter Farmer Name"
               required>
   
           </div>
           <div [hidden]="title.valid || title.pristine" class="customInvalid customPadding">
-            Blog Title is required
+            Details are required
           </div>
   
           <div class="form-group customPadding">
-            <label>Description</label>
+            <label>Phone Number</label>
             <input type="text" name="blogDesc" [(ngModel)]="blogDesc" #description="ngModel" class="form-control"
               placeholder="Enter Description" required>
           </div>
   
   
           <div class="form-group customPadding">
-            <label>Enter the blog body</label>
+            <label>Enter Phone number or ID</label>
             <textarea name="blogBody" [(ngModel)]="blogBody" #bodyHtml="ngModel" class="form-control" rows="3"
               required></textarea>
           </div>
@@ -49,7 +49,7 @@
           </div>
   
           <button type="submit" class="btn btn-primary customPadding" [disabled]="!createBlogForm.form.valid">submit the
-            blog</button>
+            request</button>
         </form>
   
       </div>
