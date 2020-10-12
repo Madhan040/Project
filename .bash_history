@@ -51,3 +51,20 @@ git status
 clear
 ls
 sudo nano .gitignore
+git init
+ls
+git add all
+git add --all
+git commit -am "second commit"
+git remote add origin https://github.com/Madhan040/Project.git
+git remote update origin https://github.com/Madhan040/Project.git
+git add --all
+git commit
+git remote add origin https://github.com/Madhan040/Project.git
+git commit
+git push origin master https://github.com/Madhan040/Project.git
+git remote add origin git@github.com:Madhan040/Project.git
+git add --all
+ls
+git push origin master
+git status
