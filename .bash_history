@@ -77,3 +77,48 @@ git commit -m "My message"
 git add -all
 git add --all
 git commit -m "My message"
+git add -madhan
+git status 
+git grep 'mad'
+git grep 'gop'
+git grep 'mad'
+git status 
+git statsu s
+git log
+git add - madhan
+git stash
+git stash drop
+git status 
+git log
+git inti
+git init
+git change
+git --help
+git status 
+git config -l
+git add -mad*
+git add madhan
+git commit -m "its a crazy commit"
+git show commit-id
+git diff -staged
+git diff --staged
+git diff
+git grep mad
+git revert
+git log
+git status
+git status
+git add -madhan
+git --help
+git switch
+git status
+git log
+it status 
+git status
+git add- madhan
+git log
+git commit -m "crazy commit"
+git diff
+git pull
+git log
+git diff
