@@ -122,3 +122,26 @@ git diff
 git pull
 git log
 git diff
+git add --all
+git init
+git add --all
+git commit -am
+git commit -am "madhan changes"
+ls
+clear
+git pull origin masterr
+git pull origin master
+clear
+git add --all
+git commit -am "may commit"
+git push origin master
+git push origin master
+clear
+git pull origin master
+git push origin master
+git pull origin master
+git push origin master
+735@ZJcts
+git pull origin master
+git push origin master
+git pull origin master
